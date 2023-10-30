@@ -1,0 +1,66 @@
+.testimonial .white-box {
+    padding-top: 90px;
+    background-color: #F9D783;
+  }
+  @media (min-width: 900px) {
+    .testimonial .white-box {
+      padding: 90px;
+    }
+  }
+  .testimonial .white-box .container {
+    background-color: #FFFFFF;
+    max-width: 1500px;
+  }
+  .testimonial .white-box .container .section-title {
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  .testimonial .white-box .container .section-title h2 {
+    font-size: 35px;
+  }
+  @media (min-width: 1400px) {
+    .testimonial .white-box .container .section-title h2 {
+      font-size: 45px;
+    }
+  }
+  .testimonial .white-box .container .comments {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 100px;
+  }
+  @media (min-width: 1200px) {
+    .testimonial .white-box .container .comments {
+      display: flex;
+    }
+  }
+  .testimonial .white-box .container .comments .comment-box {
+    padding-bottom: 15px;
+  }
+  .testimonial .white-box .container .comments .comment-box .stars {
+    padding-bottom: 20px;
+    padding-top: 90px;
+  }
+  .testimonial .white-box .container .comments .section-title {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    text-align: left;
+  }
+  .testimonial .white-box .container .comments .section-title h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+  .testimonial .white-box .container .comments .clients {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+  }
+  .testimonial .white-box .container .comments .clients p {
+    margin-bottom: 0px;
+  }
+  .testimonial .white-box .container .center-content {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }

@@ -1,0 +1,87 @@
+.article-and-news {
+    padding-bottom: 90px;
+  }
+  .article-and-news .container .section-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .article-and-news .container .section-title h2 {
+    font-size: 35px;
+  }
+  .article-and-news .container .section-title .browse-button {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: 1400px) {
+    .article-and-news .container .section-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .article-and-news .container .section-title h2 {
+      font-size: 45px;
+    }
+    .article-and-news .container .section-title .browse-button {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+  .article-and-news .container .articles {
+    gap: 2rem;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 1000px) {
+    .article-and-news .container .articles {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .article-and-news .container .articles a {
+    text-decoration: none;
+    color: #191919;
+    transition: transform 0.3s;
+  }
+  .article-and-news .container .articles a:hover {
+    transform: scale(1.06);
+  }
+  .article-and-news .container .articles .image-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  .article-and-news .container .articles .image-box img {
+    max-width: 100%;
+  }
+  .article-and-news .container .articles .image-box .yellow-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #F9D783;
+    width: 65px;
+    height: 70px;
+    text-align: center;
+  }
+  .article-and-news .container .articles .image-box .yellow-box h3 {
+    margin: 0px;
+    padding-top: 10px;
+  }
+  .article-and-news .container .articles .image-box .yellow-box p {
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .article-and-news .container .articles h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 15px;
+  }
+  .article-and-news .container .articles p {
+    padding-top: 10px;
+  }

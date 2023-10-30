@@ -8,6 +8,10 @@ import FeatureSection from '../components/FeatureSection/FeatureSection'
 import SubscribeSection from '../components/SubscribeSection/SubscribeSection'
 import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs'
 import ProjectAndCase from '../components/ProjectAndCase/ProjectAndCase'
+import OurTeam from '../components/MeetOurTeam/OurTeam'
+import Testimonial from '../components/Testimonial/Testimonial'
+import ArticleAndNews from '../components/ArticleAndNews/ArticleAndNews'
+import AboutCompany from '../components/AboutCompany/AboutCompany'
 
 const Home = () => {
   return (
@@ -17,10 +21,13 @@ const Home = () => {
         <ShowcaseSection />
         <BrandsSection />
         <FeatureSection />
-
+        <AboutCompany />
         <OurServices />
         <WhyChooseUs />
         <ProjectAndCase />
+        <OurTeam />
+        <Testimonial />
+        <ArticleAndNews />
         <SubscribeSection />
       </main>
       <Footer />
