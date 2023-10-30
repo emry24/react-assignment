@@ -1,0 +1,41 @@
+.our-services {
+    background-color: #F0EFE9;
+}
+
+.our-services .container {
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.our-services .container .section-title h2 {
+    font-size: 35px;
+}
+
+@media (min-width: 1400px) {
+    .our-services .container .section-title h2 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .our-services .container {
+        text-align: left;
+    }
+
+    .our-services .container .section-title {
+        padding-right: 800px;
+    }
+}
+
+.our-services .container .btn-transparent {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.our-services .container .box-section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
