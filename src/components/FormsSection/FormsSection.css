@@ -1,0 +1,73 @@
+.messages {
+    background-color: #F0EFE9;
+}
+
+.messages .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+.messages .container form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+
+.messages .container form input,
+.messages .container form textarea {
+    background-color: #FFFFFF;
+    width: 100%;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin-top: 16px;
+}
+
+.messages .container h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 420px;
+    padding-right: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1300px) {
+    .messages .container h2 {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .messages .container h2 {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+
+@media (max-width: 990px) {
+    .messages .container h2 {
+        padding-left: 0px;
+        padding-right: 150px;
+    }
+}
+
+@media (max-width: 520px) {
+    .messages .container h2 {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 35px;
+    }
+}
+
+.messages .container a {
+    display: flex;
+    justify-content: center;
+}

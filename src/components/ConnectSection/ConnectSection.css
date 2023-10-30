@@ -1,0 +1,23 @@
+.showcase {
+    background-color: #F0EFE9;
+}
+
+.showcase .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.showcase .container h1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+@media (max-width: 500px) {
+    .showcase .container h1 {
+        font-size: 45px;
+    }
+}
