@@ -5,6 +5,9 @@ import ShowcaseSection from '../components/ShowcaseSection/ShowcaseSection'
 import BrandsSection from '../components/BrandsSection/BrandsSection'
 import OurServices from '../components/OurServices/OurServices'
 import FeatureSection from '../components/FeatureSection/FeatureSection'
+import SubscribeSection from '../components/SubscribeSection/SubscribeSection'
+import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs'
+import ProjectAndCase from '../components/ProjectAndCase/ProjectAndCase'
 
 const Home = () => {
   return (
@@ -16,7 +19,9 @@ const Home = () => {
         <FeatureSection />
 
         <OurServices />
-        <h1>Välkommen hit</h1>
+        <WhyChooseUs />
+        <ProjectAndCase />
+        <SubscribeSection />
       </main>
       <Footer />
     </div>
