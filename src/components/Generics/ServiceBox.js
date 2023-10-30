@@ -1,5 +1,6 @@
 import React from 'react'
 import './ServiceBox.css'
+import { Link } from 'react-router-dom'
 
 const ServiceBox = ({ title, description, url }) => {
     return (
@@ -7,7 +8,7 @@ const ServiceBox = ({ title, description, url }) => {
             <h3>{title}</h3>
             <p>{description}</p>
             <div className="end-content">
-                <a className="btn-round" href={url}><i className="fa-regular fa-arrow-right"></i></a>
+                <Link className="btn-round" to={url}><i className="fa-regular fa-arrow-right"></i></Link>
             </div>
         </div>
     )

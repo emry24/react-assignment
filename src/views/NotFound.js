@@ -5,7 +5,10 @@ const NotFound = () => {
   return (
     <div className="wrapper">
       <main>
-        <h1>404 Page Not Found</h1>
+        <section className="notfound-section">
+        <h1>Page Not Found!</h1>
+        <p>Unable to find the page you are looking for.</p>
+        </section>
       </main>
       <Footer />
     </div>

@@ -1,11 +1,12 @@
 import React from 'react'
 import './Button.css'
+import { Link } from 'react-router-dom'
 
-const Button = ({ text, url }) => {
+const Button = ({ text, url, className }) => {
   return (
-    <a className="btn-yellow" href={url}>
+    <Link className={className} to={url}>
         {text}
-    <i className="fa-regular fa-arrow-up-right"></i></a>
+    <i className="fa-regular fa-arrow-up-right"></i></Link>
   )
 }
 

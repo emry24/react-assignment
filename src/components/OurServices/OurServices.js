@@ -1,7 +1,8 @@
 import React from 'react';
 import './OurServices.css';
-import ServiceBox from '../Generics/ServiceBox'
+import ServiceBox from '../Generics/ServiceBox';
 import SectionTitle from '../Generics/SectionTitle';
+import Button from '../Generics/Button';
 
 
 
@@ -20,8 +21,7 @@ const OurServices = () => {
                     
                 </div>
                 <div className="center-content">
-                    <a className="btn-transparent" href="services.html">Browse Services<i
-                            className="fa-regular fa-arrow-up-right"></i></a>
+                    <Button className="btn-transparent" text="Browse Services" url="/services"/>
                 </div>
             </div>
         </section>

@@ -1,7 +1,8 @@
-import React from 'react'
-import './FooterMenu.css'
+import React from 'react';
+import './FooterMenu.css';
+import { Link } from 'react-router-dom';
 
-import logotype_footer from '../../assets/images/logotype-footer.svg'
+import logotype_footer from '../../assets/images/logotype-footer.svg';
 
 const FooterMenu = () => {
     return (
@@ -16,31 +17,31 @@ const FooterMenu = () => {
                     </div>
                     <div className="item item-2">
                         <h4>Company</h4>
-                        <a href="#">About</a>
-                        <a href="#">Features</a>
-                        <a href="#">Works</a>
-                        <a href="#">Career</a>
+                        <Link to="#">About</Link>
+                        <Link to="#">Features</Link>
+                        <Link to="#">Works</Link>
+                        <Link to="#">Career</Link>
                     </div>
                     <div className="item item-3">
                         <h4>Help</h4>
-                        <a href="#">Costumer Support</a>
-                        <a href="#">Delivery Details</a>
-                        <a href="#">Terms & Conditions</a>
-                        <a href="#">Privacy Policy</a>
+                        <Link to="#">Costumer Support</Link>
+                        <Link to="#">Delivery Details</Link>
+                        <Link to="#">Terms & Conditions</Link>
+                        <Link to="#">Privacy Policy</Link>
                     </div>
                     <div className="item item-4">
                         <h4>Resources</h4>
-                        <a href="#">Free eBooks</a>
-                        <a href="#">Development Tutorial</a>
-                        <a href="#">How to - Blog</a>
-                        <a href="#">Youtube Playlist</a>
+                        <Link to="#">Free eBooks</Link>
+                        <Link to="#">Development Tutorial</Link>
+                        <Link to="#">How to - Blog</Link>
+                        <Link to="#">Youtube Playlist</Link>
                     </div>
                     <div className="item item-5">
                         <h4>Link</h4>
-                        <a href="#">Free eBooks</a>
-                        <a href="#">Development Tutorial</a>
-                        <a href="#">How to - Blog</a>
-                        <a href="#">Youtube Playlist</a>
+                        <Link to="#">Free eBooks</Link>
+                        <Link to="#">Development Tutorial</Link>
+                        <Link to="#">How to - Blog</Link>
+                        <Link to="#">Youtube Playlist</Link>
                     </div>
                 </div>
             </div>

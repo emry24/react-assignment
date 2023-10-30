@@ -1,5 +1,7 @@
-import React from 'react'
-import './AboutCompany.css'
+import React from 'react';
+import './AboutCompany.css';
+import Button from '../Generics/Button';
+import { Link } from 'react-router-dom'
 
 import image_founder from '../../assets/images/image-founder.svg'
 
@@ -30,10 +32,9 @@ const AboutCompany = () => {
                     accusantium libero provident voluptate amet.</p>
             </div>
             <div className="center-content">
-                <a className="btn-black" href="consulting.html">Learn More<i
-                        className="fa-regular fa-arrow-up-right"></i></a>
+                <Button className="btn-black" text="Learn More" url="services/learn-more" />
                 <div className="video-button">
-                    <a className="btn-round"><i className="fa-solid fa-play"></i></a>
+                    <Link className="btn-round"><i className="fa-solid fa-play"></i></Link>
                     <p className="intro-video">Intro Video</p>
                 </div>
             </div>

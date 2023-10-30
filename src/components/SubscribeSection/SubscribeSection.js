@@ -1,5 +1,6 @@
-import React from 'react'
-import './SubscribeSection.css'
+import React from 'react';
+import './SubscribeSection.css';
+import Button from '../Generics/Button';
 
 
 const SubscribeSection = () => {
@@ -9,8 +10,7 @@ const SubscribeSection = () => {
                 <h2>Get News Updates By Signup</h2>
                 <input type="email" required placeholder="username@domain.com" />
                 <div className="center-content">
-                    <a className="btn-yellow" href="consulting.html">Subscribe<i
-                        className="fa-regular fa-arrow-up-right"></i></a>
+                <Button className="btn-yellow" text="Subscribe" url="/consulting" />
                 </div>
             </div>
         </section>

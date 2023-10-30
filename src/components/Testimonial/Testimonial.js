@@ -1,10 +1,11 @@
-import React from 'react'
-import './Testimonial.css'
+import React from 'react';
+import './Testimonial.css';
+import Button from '../Generics/Button';
 
-import rating_stars from '../../assets/images/rating-stars.svg'
-import cassandra_warren from '../../assets/images/cassandra-warren.svg'
-import amanda_tulling from '../../assets/images/amanda-tulling.svg'
-import jack_macdogglas from '../../assets/images/jack-mcdogglas.svg'
+import rating_stars from '../../assets/images/rating-stars.svg';
+import cassandra_warren from '../../assets/images/cassandra-warren.svg';
+import amanda_tulling from '../../assets/images/amanda-tulling.svg';
+import jack_macdogglas from '../../assets/images/jack-mcdogglas.svg';
 
 const Testimonial = () => {
   return (
@@ -72,8 +73,7 @@ const Testimonial = () => {
                 </div>
             </div>
             <div className="center-content">
-                <a className="btn-black" href="reviews.html">All Reviews<i
-                        className="fa-regular fa-arrow-up-right"></i></a>
+            <Button className="btn-black" text="All Reviews" url="/reviews" />
             </div>
         </div>
     </div>

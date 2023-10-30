@@ -1,11 +1,12 @@
-import React from 'react'
-import './OurTeam.css'
+import React from 'react';
+import './OurTeam.css';
+import Button from '../Generics/Button';
 
-import kristine_palmer from '../../assets/images/kristine-palmer.svg'
-import mark_aubri from '../../assets/images/mark-aubri.svg'
-import kimberly_hansen from '../../assets/images/kimberly-hansen.svg'
-import justin_willoman from '../../assets/images/justin-willoman.svg'
-import yellow_dots from '../../assets/images/dots-yellow.svg'
+import kristine_palmer from '../../assets/images/kristine-palmer.svg';
+import mark_aubri from '../../assets/images/mark-aubri.svg';
+import kimberly_hansen from '../../assets/images/kimberly-hansen.svg';
+import justin_willoman from '../../assets/images/justin-willoman.svg';
+import yellow_dots from '../../assets/images/dots-yellow.svg';
 
 const OurTeam = () => {
   return (
@@ -17,8 +18,7 @@ const OurTeam = () => {
                 <h2>Experience Team Members</h2>
             </div>
             <div className="browse-button">
-                <a className="btn-transparent" href="team.html">Browse Team<i
-                        className="fa-regular fa-arrow-up-right"></i></a>
+                <Button className="btn-transparent" text="Browse Team" url="/team" />
             </div>
         </div>
         <div className="image-section">

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import img_logotype from '../../assets/images/logotype.svg';
+import Button from '../Generics/Button';
 
-import img_logotype from '../../assets/images/logotype.svg'
-import Button from '../Generics/Button'
-
-import './Header.css'
+import './Header.css';
 
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
         <header>
             <section className="nav-section">
                 <div className="container">
-                    <a href="index.html"><img src={img_logotype} className='logotype' alt="crito logotype" /></a>
+                    <Link to="/"><img src={img_logotype} className='logotype' alt="crito logotype" /></Link>
                     <button className="menu-bars"><i className="fa-solid fa-bars"></i></button>
                     <div className="menu">
                         <div className="top-menu">
@@ -38,12 +38,12 @@ const Header = () => {
                         </div>
                         <div className="main-menu">
                             <nav>
-                                <a className="active" href="index.html">Home</a>
-                                <a href="services.html">Service</a>
-                                <a href="news.html">News</a>
-                                <a href="contact.html">Contact</a>
+                                <NavLink to="/">Home</NavLink>
+                                <NavLink to="/services">Services</NavLink>
+                                <NavLink to="/news">News</NavLink>
+                                <NavLink to="/contacts">Contact</NavLink>
                             </nav>
-                            <Button text="Login" url="login" />
+                            <Button text="Login" url="login" className="btn-yellow" />
                         </div>
                     </div>
                 </div>
