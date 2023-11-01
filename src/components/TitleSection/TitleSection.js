@@ -1,15 +1,15 @@
 import React from 'react'
-import './ConnectSection.css'
+import './TitleSection.css'
 
-const ConnectSection = () => {
+const TitleSection = (text) => {
     return (
         <section className="showcase">
             <div className="container">
-                <p>Home Contact</p>
-                <h1>Let's Connect</h1>
+                <p>{text.subtitle}</p>
+                <h1>{text.title}</h1>
             </div>
         </section>
     )
 }
 
-export default ConnectSection
+export default TitleSection

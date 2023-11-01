@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-import ConnectSection from '../components/ConnectSection/ConnectSection'
-import ContactSection from '../components/ContactSection/ContactSection'
-import FormsSection from '../components/FormsSection/FormsSection'
-import MapSection from '../components/MapSection/MapSection'
+import React from 'react';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import TitleSection from '../components/TitleSection/TitleSection';
+import ContactSection from '../components/ContactSection/ContactSection';
+import FormsSection from '../components/FormsSection/FormsSection';
+import MapSection from '../components/MapSection/MapSection';
 
 
 const Contacts = () => {
@@ -12,7 +12,7 @@ const Contacts = () => {
     <div className="wrapper">
       <Header />
       <main>
-      <ConnectSection />
+      <TitleSection subtitle="Home Contact" title="Let's Connect"/>
       <ContactSection />
       <FormsSection />
       <MapSection />

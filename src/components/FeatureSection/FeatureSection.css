@@ -16,7 +16,12 @@
 }
 
 @media (min-width: 1200px) {
-    .features .container .features-box {
+    .features .container   {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features .container .grid-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -84,7 +89,12 @@
 }
 
 @media (min-width: 1200px) {
-    .features .container .features-box .grid-box {
+
+    .features .container .features-box {
+        padding-bottom: 120px;
+    }
+
+    .features .container .grid-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-right: 50px;
