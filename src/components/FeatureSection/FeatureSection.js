@@ -1,7 +1,8 @@
 import React from 'react'
-import './FeatureSection.css'
-import SectionTitle from '../Generics/SectionTitle';
+import './FeatureSection.css';
 import Button from '../Generics/Button';
+import SectionTitle from '../Generics/SectionTitle';
+import BoxItem from '../Generics/BoxItem';
 
 
 import icon_hands from '../../assets/images/icon-hands.svg'
@@ -14,33 +15,16 @@ const FeatureSection = () => {
         <section className="features">
             <div className="container">
                 <div className="features-box">
-                    <SectionTitle subtitle="Features" title="Our Accounting Is Trusted By Thousand Of Companies" />
+                    <SectionTitle subtitle="Features" title="Our Accounting Is Trusted By Thousand Of Companies"/>
                     <div className="center-content">
                         <Button className="btn-yellow" text="Learn More" url="/services/learn-more" />
                     </div>
                 </div>
                 <div className="grid-box">
-                    <div className="box-item">
-                        <img src={icon_hands} alt="Shaking hand icon" />
-                        <h3>Business Advice</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div className="box-item">
-                        <img src={icon_lightboulb} alt="Lightboulb icon" />
-                        <h3>Startup Business</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div className="box-item">
-                        <img src={icon_charts} alt="Statistics icon" />
-                        <h3>Financial Advice</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div className="box-item">
-                        <img src={icon_engineringbox} alt="Engineringbox icon" />
-                        <h3>Risk Management</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-
+                    <BoxItem className="box-item" src={icon_hands} alt="Shaking hand icon" title="Business Advice" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
+                    <BoxItem className="box-item" src={icon_lightboulb} alt="Lightboulb icon" title="Startup Business" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
+                    <BoxItem className="box-item" src={icon_charts} alt="Statistics icon" title="Financial Advice" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
+                    <BoxItem className="box-item" src={icon_engineringbox} alt="Engineringbox icon" title="Risk Management" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
                 </div>
             </div>
         </section>

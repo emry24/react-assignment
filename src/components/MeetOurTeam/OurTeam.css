@@ -42,17 +42,3 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .meet-our-team .container .image-section .team-member {
-    max-width: 300px;
-    min-width: 150px;
-  }
-  .meet-our-team .container .image-section .team-member img {
-    max-width: 100%;
-    height: auto;
-  }
-  .meet-our-team .container .image-section .team-member h3 {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    padding-top: 35px;
-  }

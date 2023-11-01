@@ -1,6 +1,7 @@
 import React from 'react';
 import './WhyChooseUs.css';
 import SectionTitle from '../Generics/SectionTitle';
+import BoxItem2 from '../Generics/BoxItem';
 
 import icon_thumbsup from '../../assets/images/icon-thumbs-up.svg';
 import icon_ellipse from '../../assets/images/icon-ellipse.svg';
