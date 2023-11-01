@@ -1,7 +1,8 @@
 import React from 'react';
 import './ProjectAndCase.css';
+import SectionTitle from '../Generics/SectionTitle';
 import { Link } from 'react-router-dom';
-import Button from '../Generics/Button'
+import Button from '../Generics/Button';
 
 import img_article1 from '../../assets/images/article-image-1.png'
 import img_article2 from '../../assets/images/article-image-2.png'
@@ -13,10 +14,7 @@ const ProjectAndCase = () => {
         <div>
             <section className="project-and-case">
                 <div className="container">
-                    <div className="section-title">
-                        <p>Project & Case Studies</p>
-                        <h2>Let's Looks Our Global Projects</h2>
-                    </div>
+                <SectionTitle subtitle="Project & Case Studies" title="Let's Looks Our Global Projects" />
                     <div className="project-and-cases">
                         <Link className="project" to="#">
                             <img src={img_article1} alt="A mans hand reading a business paper" />

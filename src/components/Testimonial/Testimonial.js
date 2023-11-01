@@ -1,5 +1,6 @@
 import React from 'react';
 import './Testimonial.css';
+import SectionTitle from '../Generics/SectionTitle';
 import Button from '../Generics/Button';
 
 import rating_stars from '../../assets/images/rating-stars.svg';
@@ -12,10 +13,7 @@ const Testimonial = () => {
     <section className="testimonial">
     <div className="white-box">
         <div className="container">
-            <div className="section-title">
-                <p>Testimonial</p>
-                <h2>What Our Client Says</h2>
-            </div>
+        <SectionTitle subtitle="Testimonial" title="What Our Client Says" />
             <div className="comments">
                 <div>
                     <div className="comment-box">

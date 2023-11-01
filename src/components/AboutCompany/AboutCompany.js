@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutCompany.css';
+import SectionTitle from '../Generics/SectionTitle';
 import Button from '../Generics/Button';
 import { Link } from 'react-router-dom'
 
@@ -20,10 +21,7 @@ const AboutCompany = () => {
             </div>
         </div>
         <div className="text-section">
-            <div className="section-title">
-                <p>About Company</p>
-                <h2>We Are Business Consulting & Credit Repair Experts</h2>
-            </div>
+        <SectionTitle subtitle="About Company" title="We Are Business Consulting & Credit Repair Experts" />
             <div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda
                     esse

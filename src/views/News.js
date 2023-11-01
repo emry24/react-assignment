@@ -10,9 +10,9 @@ const News = () => {
         <Header />
         <main>
         <TitleSection subtitle="Home News" title="News & Articles"/>
-
+        
         </main>
-        <Footer />
+        <Footer /> 
     </div>
   )
 }

@@ -1,22 +1,20 @@
-import React from 'react'
-import './WhyChooseUs.css'
+import React from 'react';
+import './WhyChooseUs.css';
+import SectionTitle from '../Generics/SectionTitle';
 
-import icon_thumbsup from '../../assets/images/icon-thumbs-up.svg'
-import icon_ellipse from '../../assets/images/icon-ellipse.svg'
-import icon_designpen from '../../assets/images/icon-designpen.svg'
-import icon_ai from '../../assets/images/icon-artificial-intellegence.svg'
-import image_meeting from '../../assets/images/image-meeting.svg'
-import background_image_meeting from '../../assets/images/background-image-meeting.svg'
+import icon_thumbsup from '../../assets/images/icon-thumbs-up.svg';
+import icon_ellipse from '../../assets/images/icon-ellipse.svg';
+import icon_designpen from '../../assets/images/icon-designpen.svg';
+import icon_ai from '../../assets/images/icon-artificial-intellegence.svg';
+import image_meeting from '../../assets/images/image-meeting.svg';
+import background_image_meeting from '../../assets/images/background-image-meeting.svg';
 
 const WhyChooseUs = () => {
   return (
     <section className="why-choose-us">
     <div className="container">
         <div className="main-box">
-            <div className="section-title">
-                <p>Why Choose Us</p>
-                <h2>Why We Are The Best Business Consulting Agency</h2>
-            </div>
+        <SectionTitle subtitle="Why Choose Us" title="Why We Are The Best Business Consulting Agency" />
             <div className="icons-box">
                 <div className="box-item">
                     <div>
