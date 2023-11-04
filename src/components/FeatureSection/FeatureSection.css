@@ -32,12 +32,15 @@
 }
 
 @media (min-width: 1200px) {
-    .features .container .features-box .section-title {
+    .features .container .features-box {
         padding-left: 60px;
         padding-right: 100px;
     }
+    .features .container .features-box .section-title {
+        padding-bottom: 0px;
+    }
 
-    .features .container .features-box .section-title .btn-yellow {
+    .features .container .features-box .btn-yellow {
         width: 100%;
     }
 }
@@ -55,13 +58,15 @@
 @media (min-width: 800px) {
     .features .container .features-box h2 {
         font-size: 45px;
+        padding-bottom: 0px;
     }
 }
 
-.features .container .features-box h3 {
+.features .container .box-item h3 {
     font-size: 22px;
     font-weight: 700;
     font-family: "DM Sans", sans-serif;
+    padding-top: 10px;
 }
 
 .features .container .features-box a {
@@ -73,20 +78,20 @@
     padding-bottom: 1rem;
 }
 
-.features .container .features-box .grid-box {
+.features .container .grid-box {
     display: grid;
-    -moz-column-gap: 40px;
     column-gap: 40px;
     row-gap: 15px;
     grid-template-columns: 1fr;
     padding-right: 0px;
-    padding-top: 0px;
+    padding-top: 40px;
     padding-bottom: 60px;
 }
 
-.features .container .features-box .grid-box .box {
+.features .container .features-box .grid-box .box-item {
     padding-top: 30px;
 }
+
 
 @media (min-width: 1200px) {
 
@@ -96,6 +101,7 @@
 
     .features .container .grid-box {
         display: grid;
+        row-gap: 60px;
         grid-template-columns: 1fr 1fr;
         margin-right: 50px;
         padding-top: 120px;

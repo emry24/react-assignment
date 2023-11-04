@@ -58,10 +58,10 @@
 }
 .showcase .container img {
   display: none;
-  margin-right: -50px;
 }
 @media (min-width: 1200px) {
   .showcase .container img {
     display: block;
+    margin-right: -50px;
   }
 }
