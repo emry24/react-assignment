@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    
+    
+}
+
+.article-image {
+    width: 400px;
+    height: auto;
+}
