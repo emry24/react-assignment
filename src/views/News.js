@@ -4,6 +4,7 @@ import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import TitleSection from '../components/TitleSection/TitleSection'
 import Articles from '../components/ArticleAndNews/Articles'
+import SubscribeSection from '../components/SubscribeSection/SubscribeSection'
 
 const News = () => {
 
@@ -14,6 +15,7 @@ const News = () => {
       <main>
         <TitleSection subtitle="Home News" title="News & Articles" />
         <Articles />
+        <SubscribeSection />
       </main>
       <Footer />
     </div>
