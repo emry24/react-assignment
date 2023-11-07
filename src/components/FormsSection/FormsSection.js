@@ -4,6 +4,7 @@ import './FormsSection.css'
 const FormsSection = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [textMessage, setTextMessage] = useState('')
 
   const [errorMessage, setErrorMessage] = useState('')
   
@@ -12,7 +13,7 @@ const FormsSection = () => {
     e.preventDefault()
     setErrorMessage('')
 
-    const message = {name, email}
+    const message = {name, email, textMessage}
     const json = JSON.stringify(message)
 
     const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
@@ -40,6 +41,7 @@ const FormsSection = () => {
   const clearForm = () => {
     name('')
     email('')
+    textMessage('')
   }
 
 
@@ -51,7 +53,7 @@ const FormsSection = () => {
         <form onSubmit={handleSubmit} noValidate>
             <input type="text" required placeholder="Name*" value={name} onChange={(e) => setName(e.target.value)} />
             <input type="text" required placeholder="Email*" value={email} onChange={(e) => setEmail(e.target.value)} />
-            <textarea cols="30" rows="10" placeholder="Your Message*"></textarea>
+            <textarea cols="30" rows="10" placeholder="Your Message*" value={textMessage} onChange={(e) => setTextMessage(e.target.value)}></textarea>
         </form>
         <button className="btn-yellow btn-login" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
     </div>
