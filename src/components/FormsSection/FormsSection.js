@@ -4,7 +4,7 @@ import './FormsSection.css'
 const FormsSection = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [textMessage, setTextMessage] = useState('')
+  const [message, setMessage] = useState('')
 
   const [errorMessage, setErrorMessage] = useState('')
   
@@ -13,8 +13,8 @@ const FormsSection = () => {
     e.preventDefault()
     setErrorMessage('')
 
-    const message = {name, email, textMessage}
-    const json = JSON.stringify(message)
+    const textMessage = {name, email, message}
+    const json = JSON.stringify(textMessage)
 
     const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
       method: 'post',
@@ -32,16 +32,16 @@ const FormsSection = () => {
         alert('Meddelandet har skickats')
         break
       case 400:
-          setErrorMessage('Något gick fel. Kontrollera att fälten är ifyllda korrekt')   
+          setErrorMessage('Något gick fel. Kontrollera att fälten är korrekt ifyllda.')   
           break
     }
 
   }
 
   const clearForm = () => {
-    name('')
-    email('')
-    textMessage('')
+    setName('')
+    setEmail('')
+    setMessage('')
   }
 
 
@@ -49,13 +49,15 @@ const FormsSection = () => {
     <section className="messages">
     <div className="container">
         <h2>Leave us a message for any information.</h2>
-        <p className='errorMessage'>{errorMessage}</p>
+        
         <form onSubmit={handleSubmit} noValidate>
+            <p className='errorMessage'>{errorMessage}</p>
             <input type="text" required placeholder="Name*" value={name} onChange={(e) => setName(e.target.value)} />
             <input type="text" required placeholder="Email*" value={email} onChange={(e) => setEmail(e.target.value)} />
-            <textarea cols="30" rows="10" placeholder="Your Message*" value={textMessage} onChange={(e) => setTextMessage(e.target.value)}></textarea>
+            <textarea cols="30" rows="10" placeholder="Your Message*" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+            <button className="btn-yellow btn-login" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
         </form>
-        <button className="btn-yellow btn-login" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
+        
     </div>
     </section>
   )
