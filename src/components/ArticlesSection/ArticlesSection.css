@@ -1,0 +1,206 @@
+.articles .container {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr fr;
+}
+
+@media (max-width: 1200px) {
+    .articles .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .articles .container .article-classroom-digitalization {
+        grid-column: 1/3;
+        margin-right: 100px;
+    }
+}
+
+.articles .container .article-classroom-digitalization h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 1400px) {
+    .articles .container .article-classroom-digitalization h2 {
+        font-size: 45px;
+    }
+}
+
+.articles .container .article-classroom-digitalization .article-ref {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 70px;
+    font-size: 20px;
+}
+
+@media (max-width: 780px) {
+    .articles .container .article-classroom-digitalization .article-ref {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.articles .container .article-classroom-digitalization .article-ref .dot::after {
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    background-color: #F9D783;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+@media (max-width: 780px) {
+    .articles .container .article-classroom-digitalization .article-ref .dot::after {
+        display: none;
+    }
+}
+
+.articles .container .article-classroom-digitalization img {
+    max-width: 100%;
+    height: auto;
+}
+
+.articles .container .article-classroom-digitalization .article-text {
+    padding-top: 40px;
+}
+
+.articles .container .article-classroom-digitalization .article-text .quote {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
+.articles .container .article-classroom-digitalization .article-text .quote img {
+    height: 25px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.articles .container .article-classroom-digitalization .subjects {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+    .articles .container .article-classroom-digitalization .subjects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.articles .container .article-classroom-digitalization .subjects p {
+    background-color: #f3f3f3;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+@media (min-width: 1200px) {
+    .articles .container .search-posts {
+        grid-column: 3/4;
+    }
+}
+
+.articles .container .search-posts .searchbox {
+    width: 100%;
+    background-color: #f3f3f3;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 15px 30px;
+}
+
+.articles .container .search-posts .searchbox i {
+    padding-right: 10px;
+}
+
+.articles .container .search-posts .searchbox input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.articles .container .search-posts .recent-posts {
+    border: 1px solid #DAD9D3;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.articles .container .search-posts .recent-posts h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.articles .container .search-posts .recent-posts h3::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #191919;
+}
+
+.articles .container .search-posts .recent-posts p {
+    padding-bottom: 30px;
+}
+
+.articles .container .search-posts .recent-posts a {
+    text-decoration: none;
+    color: #191919;
+}
+
+.articles .container .search-posts .recent-posts a b:hover {
+    text-decoration: underline;
+}
+
+.articles .container .search-posts .categories {
+    border: 1px solid #DAD9D3;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.articles .container .search-posts .categories h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.articles .container .search-posts .categories h3::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #191919;
+}
+
+.articles .container .search-posts .categories a {
+    text-decoration: none;
+    color: #191919;
+    display: flex;
+}
+
+.articles .container .search-posts .categories a b {
+    padding-right: 5px;
+}
+
+.articles .container .search-posts .categories a b:hover {
+    text-decoration: underline;
+}
+
+.articles .container .search-posts .categories a .gray-text {
+    color: #7c7c7c;
+    padding-left: 5px;
+}

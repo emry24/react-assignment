@@ -8,6 +8,7 @@ import Home from './views/Home';
 import Contacts from './views/Contacts';
 import NotFound from './views/NotFound';
 import News from './views/News';
+import NewsDetails from './views/NewsDetails';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
         <Route path='/contacts' element={<Contacts />} />
         <Route path='*' element={<NotFound />} />
         <Route path='/news' element={<News />} />
+        <Route path='/news/:id' element={<NewsDetails/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

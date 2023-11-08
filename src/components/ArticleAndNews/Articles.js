@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import React from 'react'
 import './Articles.css'
+import {Link} from 'react-router-dom'
 import scroll_numbers from '../../assets/images/numbers-scrolling.svg'
 
 const Articles = () => {
@@ -12,10 +13,10 @@ const Articles = () => {
     }, [])
 
     const getArticles = async () => {
-
         const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
-        setArticles(await result.json())
-  
+        
+        if (result.status === 200)
+            setArticles(await result.json())
     }
 
     return (
@@ -25,7 +26,7 @@ const Articles = () => {
                 <div className='articles'>
                 {
                     articles.map(article => (
-                        <div className="article-item" key={article.id}>
+                        <Link className="article-item" key={article.id} to={`/news/${article.id}`}>
                             <div className='image-box'>
                                 <img className="article-image" src={article.imageUrl} alt={article.title} />
                                 <div className='yellow-box'>
@@ -36,7 +37,7 @@ const Articles = () => {
                             <p>{article.category}</p>
                             <h3>{article.title}</h3>
                             <p>{article.content}</p>
-                        </div>
+                        </Link>
                     ))
                 }
                 </div>
