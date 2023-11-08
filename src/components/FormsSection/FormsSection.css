@@ -23,6 +23,13 @@
     padding-bottom: 16px;
 }
 
+.messages .container form label {
+    color: rgb(219, 8, 8);
+    margin-left: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .messages .container form input,
 .messages .container form textarea {
     background-color: #FFFFFF;
@@ -33,7 +40,7 @@
     justify-content: flex-start;
     border-radius: 25px;
     padding: 15px 30px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 .messages .container h2 {
@@ -78,4 +85,5 @@
 .messages .container button {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
