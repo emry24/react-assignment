@@ -1,3 +1,14 @@
+.footer-menu {
+    position: relative;
+    z-index: 1;
+}
+.footer-menu .element-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 footer .footer-menu .container {
     color: #FFFFFF;
     font-family: "Inter", sans-serif;

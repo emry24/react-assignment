@@ -1,6 +1,7 @@
 import React from 'react';
 import './SubscribeSection.css';
 import Button from '../Generics/Button';
+import element_subscribe from '../../assets/images/element-subscribe.svg'
 
 
 const SubscribeSection = () => {
@@ -13,6 +14,7 @@ const SubscribeSection = () => {
                 <Button className="btn-yellow" text="Subscribe" url="/consulting" />
                 </div>
             </div>
+            <img className='element-subscribe' src={element_subscribe} />
         </section>
     )
 }

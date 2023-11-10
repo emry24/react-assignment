@@ -2,7 +2,7 @@ import React from 'react'
 import './ShowcaseSection.css'
 import '../Generics/Button.css'
 import Button from '../Generics/Button'
-
+import element_showcase from '../../assets/images/element-showcase.svg'
 
 
 import img_showcase from '../../assets/images/showcase-image.svg'
@@ -17,11 +17,11 @@ const ShowcaseSection = () => {
                     <Button className="btn-yellow" text="Get Consultning" url="/services/get-consulting" />
                     <Button className="btn-transparent" text="Learn More" url="/services/consulting" /> 
                 </div>
-                <div>
+                
                 <img src={img_showcase} alt="showcase image of a man in a suit with a tablet" />
-                </div>
                 
             </div>
+            <img src={element_showcase} />
         </section>
     )
 }

@@ -3,6 +3,7 @@ import './FooterMenu.css';
 import { Link } from 'react-router-dom';
 
 import logotype_footer from '../../assets/images/logotype-footer.svg';
+import element_footer from '../../assets/images/element-footer.svg'
 
 const FooterMenu = () => {
     return (
@@ -45,6 +46,7 @@ const FooterMenu = () => {
                     </div>
                 </div>
             </div>
+            <img className='element-footer' src={element_footer} />
         </div>
     )
 }
