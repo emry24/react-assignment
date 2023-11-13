@@ -19,6 +19,13 @@ const Articles = () => {
             setArticles(await result.json())
     }
 
+    const formatDate = (dateString) => {
+        const date = new Date (dateString)
+        const day = date.getDate().toString().padStart(2, '0')
+        const month = date.toLocaleString('default', { month: 'short' })
+        return { day, month }
+    }
+
     return (
         <section className='article-and-news'>
             <div className='container'>
@@ -30,8 +37,8 @@ const Articles = () => {
                             <div className='image-box'>
                                 <img className="article-image" src={article.imageUrl} alt={article.title} />
                                 <div className='yellow-box'>
-                                    <h3>date</h3>
-                                    <p>month</p>
+                                    <h3>{formatDate(article.published).day}</h3>
+                                    <p>{formatDate(article.published).month}</p>
                                 </div>
                             </div>
                             <p>{article.category}</p>
