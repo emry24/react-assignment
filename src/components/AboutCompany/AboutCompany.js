@@ -14,8 +14,9 @@ const AboutCompany = () => {
             <img className="founder" src={image_founder} alt="Founder of Crito" />
             <div className="founderquotes">
                 <p>
-                    <strong>Samantha Brown,</strong>
+                    <strong>Samantha Brown, </strong>
                     <span>Founder</span>
+                    <br />
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit."
                 </p>
             </div>

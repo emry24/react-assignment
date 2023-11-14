@@ -21,7 +21,7 @@ const ShowcaseSection = () => {
                 <img src={img_showcase} alt="showcase image of a man in a suit with a tablet" />
                 
             </div>
-            <img src={element_showcase} />
+            <img className='element-showcase' src={element_showcase} />
         </section>
     )
 }

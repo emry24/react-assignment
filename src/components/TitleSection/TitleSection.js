@@ -3,7 +3,7 @@ import './TitleSection.css'
 
 const TitleSection = (text) => {
     return (
-        <section className="showcase">
+        <section className="title-section">
             <div className="container">
                 <p>{text.subtitle}</p>
                 <h1>{text.title}</h1>

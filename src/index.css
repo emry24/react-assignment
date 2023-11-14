@@ -58,6 +58,7 @@ main {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 60px;
+  text-align: center;
 }
 
 .notfound-section .container .fa-ufo {

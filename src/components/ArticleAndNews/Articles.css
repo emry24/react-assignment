@@ -1,13 +1,13 @@
 
-/* .image-container {
+.image-container {
     height: 250px;
     overflow: hidden;
-} */
+}
 
-/* .article-image {
+.article-image {
     max-width: 100%;
     height: auto;
-} */
+}
 
 .article-and-news .container h2 {
     font-size: 35px;
@@ -46,7 +46,7 @@
     left: 0;
     /* display: flex; */
     height: 250px;
-    width: 400px;
+    width: auto;
     overflow: hidden;
 }
 
