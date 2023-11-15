@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './ArticlesSection.css'
 import image_quotationmarks from '../../assets/images/image-quotationmarks.png'
 import { useArticles } from '../../contexts/ArticleContext'
+import ArticlesSmall from '../ArticlesSmall/ArticlesSmall'
+
 
 const ArticlesSection = () => {
     const { article, getArticle, clearArticle } = useArticles()
@@ -25,6 +27,11 @@ const ArticlesSection = () => {
     //     }
     // }
 
+    const formatDate = (timestamp) => {
+        const date = new Date(timestamp)
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric' }
+        return date.toLocaleString(undefined, options)
+    }
 
     return article ?
         (
@@ -33,7 +40,7 @@ const ArticlesSection = () => {
                     <div className='article-classroom-digitalization'>
                         <h2 className='title'>{article.title}</h2>
                         <div className='article-ref'>
-                            <p className='dot'>{article.published}</p>
+                            <p className='dot'>{formatDate(article.published)}</p>
                             <p className='dot'>{article.category}</p>
                             <p className='author'>{article.author}</p>
                         </div>
@@ -91,53 +98,54 @@ const ArticlesSection = () => {
                         </form>
                         <div className="recent-posts">
                             <h3>Recent Posts</h3>
-                            <a href="#">
+                            <Link to="#">
                                 <b>How To Blow Throught Capital At An Incredible Rate</b>
                                 <p>Jan 14, 2020</p>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>Design Studios That Everyone Should Know About?</b>
                                 <p>Jan 14, 2020</p>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>How did we get 1M+ visitors in 30 days without anything!</b>
                                 <p>Jan 14, 2020</p>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>Figma On Digma: How We Built Our Website Design System</b>
                                 <p>Jan 14, 2020</p>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="categories">
                             <h3>Categories</h3>
-                            <a href="#">
+                            <Link to="#">
                                 <b>Technology</b>
                                 <p>-</p><b className="gray-text">20 Posts</b>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>Freelancing</b>
                                 <p>-</p><b className="gray-text">07 Posts</b>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>Writing</b>
                                 <p>-</p><b className="gray-text">16 Posts</b>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>Marketing</b>
                                 <p>-</p><b className="gray-text">11 Posts</b>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>Business</b>
                                 <p>-</p><b className="gray-text">35 Posts</b>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <b>Education</b>
                                 <p>-</p><b className="gray-text">14 Posts</b>
-                            </a>
+                            </Link>
                         </div>
-                    </div>
+                    </div>  
                 </div>
+                <ArticlesSmall /> 
             </section>
         )
         :
