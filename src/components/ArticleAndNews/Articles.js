@@ -3,21 +3,23 @@ import React from 'react'
 import './Articles.css'
 import {Link} from 'react-router-dom'
 import scroll_numbers from '../../assets/images/numbers-scrolling.svg'
+import { useArticles } from '../../contexts/ArticleContext'
 
 const Articles = () => {
+    const { articles } = useArticles()
 
-    const [articles, setArticles] = useState([])
+    // const [articles, setArticles] = useState([])
     
-    useEffect(() => {
-      getArticles()
-    }, [])
+    // useEffect(() => {
+    //   getArticles()
+    // }, [])
 
-    const getArticles = async () => {
-        const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
+    // const getArticles = async () => {
+    //     const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
         
-        if (result.status === 200)
-            setArticles(await result.json())
-    }
+    //     if (result.status === 200)
+    //         setArticles(await result.json())
+    // }
 
     const formatDate = (dateString) => {
         const date = new Date (dateString)

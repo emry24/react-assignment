@@ -2,23 +2,28 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './ArticlesSection.css'
 import image_quotationmarks from '../../assets/images/image-quotationmarks.png'
+import { useArticles } from '../../contexts/ArticleContext'
 
 const ArticlesSection = () => {
-    const [article, setArticle] = useState(null)
-    const { id } = useParams()
+    const { article, getArticle, clearArticle } = useArticles()
+    const {id} = useParams()
+    // const [article, setArticle] = useState(null)
+    // const { id } = useParams()
 
     useEffect(() => {
-        getArticle()
+        getArticle(id)
+
+        return () => clearArticle()
     }, [])
 
-    const getArticle = async () => {
-        if (id !== undefined) {
-            const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
+    // const getArticle = async () => {
+    //     if (id !== undefined) {
+    //         const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
 
-            if (result.status === 200)
-                setArticle(await result.json())
-        }
-    }
+    //         if (result.status === 200)
+    //             setArticle(await result.json())
+    //     }
+    // }
 
 
     return article ?

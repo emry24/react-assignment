@@ -9,12 +9,14 @@ import Contacts from './views/Contacts';
 import NotFound from './views/NotFound';
 import News from './views/News';
 import NewsDetails from './views/NewsDetails';
+import { ArticleProvider } from './contexts/ArticleContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ArticleProvider>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contacts' element={<Contacts />} />
@@ -22,6 +24,7 @@ root.render(
         <Route path='/news' element={<News />} />
         <Route path='/news/:id' element={<NewsDetails/>} />
       </Routes>
+      </ArticleProvider>  
     </BrowserRouter>
   </React.StrictMode>
 );
