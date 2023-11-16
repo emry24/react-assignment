@@ -12,9 +12,7 @@ const NewsDetails = () => {
             <Header />
             <main>
             <TitleSection subtitle="Home News" title="News & Articles"/>
-            <ArticlesSection />
-                
-                
+            <ArticlesSection />   
             </main>
             <Footer />
         </div>

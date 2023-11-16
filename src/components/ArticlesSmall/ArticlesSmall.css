@@ -13,13 +13,13 @@
     font-size: 35px;
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
-    
     padding-top: 50px;
 }
 
 .article-and-news .container .articles {
     gap: 2rem;
     padding-bottom: 0px;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -27,6 +27,7 @@
 @media (min-width: 1000px) {
     .article-and-news .container .articles {
         grid-template-columns: 1fr 1fr 1fr;
+        
     }
 }
 

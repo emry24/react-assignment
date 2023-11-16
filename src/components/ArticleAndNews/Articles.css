@@ -1,4 +1,6 @@
-
+.article-and-news {
+    background-color: #FFFFFF;
+}
 .image-container {
     height: 250px;
     overflow: hidden;
@@ -8,6 +10,7 @@
     max-width: 100%;
     height: auto;
 }
+
 
 .article-and-news .container h2 {
     font-size: 35px;

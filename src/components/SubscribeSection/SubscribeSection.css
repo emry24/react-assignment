@@ -6,7 +6,7 @@
 
 .subscribe .element-subscribe {
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     right: 0;
     z-index: -1;
 }

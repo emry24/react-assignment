@@ -1,6 +1,16 @@
 .title-section {
     background-color: #F0EFE9;
+    position: relative;
+    z-index: 1;
 }
+
+.title-section .element-showcase {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 100%
+  }
 
 .title-section .container {
     display: flex;
